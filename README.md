@@ -11,60 +11,71 @@ A historical dataset with 30641 rows and 13 columns spanning 1 year. Data is sto
 first steps for analysing the data is to import all the import python libraries which will be used in this analysis process. In this analysis, we will be using Numpy, Pandas, Matplotlib and seaborn libraries.
 ![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/0cd7a6f6-ef85-460e-89e1-a304675a5b6b)
 
-then will import the dataset on which we have to analyze.
+Then will import the dataset on which we have to analyze.
 ![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/c0d6351a-19eb-4f61-8eb1-8d20b5a7f79f)
 
-Then we will use python codes to get information of the data.
+Then we will run df.shape to get no. of rows and columns in the datasets.
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/c636916f-7014-4e3d-a7f8-981ddcc47be1)
 
-- Analysis of orders shipped in various months.
+Run df.head() to get information top 5 rows of the datasets.
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/a2a81dc7-2da7-4dde-8421-22a770f7d930)
 
-![sales vs order](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/14cbd2d9-f171-4982-a7e5-4ea97b21e455)
+run df.isnull().sum() to get the sum of the null values in the datasets.
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/1e9992ff-5dbb-46fb-9a0c-1a61c0759d51)
 
-- Analysis of Order Shipped Contribution by Men and Women
+Now, We have noticed that Unnamed column is useless in the data.
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/3af9526d-5f57-4cf5-9073-a5742825400c)
 
-![men vs women](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/f187611e-6e2d-40aa-8962-6f09ef8f6075)
+In column weeklyhours, we have changed 10-may to 5-10 to make the data more meaninfull or significant.
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/b7e9c467-b802-4139-a348-c668219dd8cf)
 
--	Analysis of different Order Status 
-![order status](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/5af95c8e-be20-4bcd-a657-b8b3e3b35eaf)
+
+-Now We will Analyse the Dataset
+
+- Analysis of Gender distribution in the class
+
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/ba0bccbe-98bb-46a8-9858-2076eba6cd2b)
+
+- Analysis of Impact of the Parent's education on the scores.
   
--	Analysis of Top 5 States which contribute to the Sales
-![Top 5 States](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/787b5d8b-84d5-47d8-a275-089e25127dcf)
--	Analysis of the relationship between age and gender based on numbers of order.
-![age vs gender](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/e570b0dc-0ff5-4435-9877-34571fb894eb)
-- Analysis of channel contribution to sales
-![Sales distribution](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/0f5b2b41-e558-4d5d-b9b1-704d054a6da3)
-- 
-- Easy-to-read cards visualize important KPIs for rapid decision-making.
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/206ea448-812f-4efd-860f-02c25a2dd81d)
 
-![month](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/f6b9f255-5c79-4386-b7c3-5d023b24cf09)
 
-![channel](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/08e33ca9-f5de-44c3-a508-02dbf0b57d0e)
+from the above the chart we have concluded that the education of parent have big effect on the score of the students.
 
-![category](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/4bb02017-8bd2-4300-b334-8a73fa25b0df)
+-	Analysis of Impact of parents' marital status on the scores.
 
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/3ddd9abe-f170-489a-b2b8-fb5a9a6a5192)
+
+-	Analysis of Scores by the students in the different subject through boxplot diagram.
+-	
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/d803b7c1-8f57-4f07-96be-08403e05d14f)
+
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/d0eff258-06bd-4556-a97f-f7da8e0eb2ba)
+
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/b60d1906-2e4e-486d-9d53-f05e38f0df65)
+
+From these diagrams, we conclude that scores ranges in the maths is smaller than the other subjects. Thats means students are not able to score high marks in mathematics or mathematics is difficult subject for the student.
+
+-	Analysis of the distribution of the Ethnic groups.
+
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/db17c6f1-7460-45cf-94d1-27ea3c881a5d)
+
+![image](https://github.com/Sauravsingh0049/Student-Performance-Analysis-with-Python/assets/155745836/c6e209b2-4757-471f-969b-5b12478d8315)
+
+From this, we conclude that class have the high no. of students which are lies under the Ethnic Group C which consist of 28.55% followed by Group E and D.  
 
 ## Tools Used
-![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-- Utilized **Power Query** to extract and transform the data, then transferred the data to **Power Pivot** for further analysis.
-- **Power Pivot** is used to store the data for further exploration in the future, if the number of rows increases into the millions.
-- Implemented **IF** and **COUNTA** functions to prepare reports that interpret sales, Status, channel, category, size, shipped state, age and gender.
+![images](https://github.com/Sauravsingh0049/Vrinda-Store-Data-Analysis-and-Dashboard-Creation-Projec/assets/155745836/3cf4ac9f-2674-409e-9110-dfb4815bf8b7)
 
-## Overview
-![Screenshot (11)](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/81fbf0d6-a745-4712-b255-0c7aba6d9ac0)
-
-![Screenshot (12)](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/b550a725-a9ea-4a5b-9f49-8c955db1d6c7)
-
-![Screenshot (13)](https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/db13250f-b9aa-403a-8cc8-4b8416fd2a61)
-
-https://github.com/irawatsaurav/Data-Analysis-using-Excel/assets/155745836/9ca6b75d-2cb8-4e0f-aca3-0e4ff4e09f42
+- Python is a high-level, general-purpose, and very popular programming language. Python programming language (latest Python 3) is being used in web development, and Machine Learning applications, along with all cutting-edge technology in Software Industry. Python language is being used by almost all tech-giant companies like – Google, Amazon, Facebook, Instagram, Dropbox, Uber… etc.
 
 ## Sample Insight
-- women are more likely to buy compared to men.
-- Maharastra, Karnataka, and Uttar Pradesh are the top 3.
-- The adult age group (30-39) is max contributing.
-- Amazon, Flipkart, and Myntra Channels are max Contributors.
+- Class consist have more boys then the girls.
+- Impact of parents's education level on score is significant high thats means who scores high score likely to have highly education qualified parents.
+- There is no high impact of parent's marital on the score.
+- class consist of high no. of students who belongs to group C.
+- Mathematics is difficult subjects for the students to high scores.
 
-## Final Concluion 
-- Target Women customers of the age group (30-39) living in Maharastra, Karnataka, and Uttar Pradesh by showing ads/offers/coupons available on Amazon, Flipkart, and Myntra.
 
 
